@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unmild Designer — PCB, Firmware &amp; Hardware Verification</title>
+<meta name="description" content="A professional desktop electronics platform for PCB design, embedded firmware, microcontroller behavior, 3D verification, analysis, and manufacturing output.">
+<meta name="theme-color" content="#0b0a17">
+<!-- Relative URLs keep this site portable for GitHub Pages, including project sites. -->
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Unmild Designer">
+<meta property="og:title" content="Unmild Designer — PCB, Firmware &amp; Hardware Verification">
+<meta property="og:description" content="PCB design, embedded C/C++ firmware, microcontroller behavior, 3D verification, analysis, and manufacturing in one professional workspace.">
+<meta property="og:image" content="images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Unmild Designer — PCB, Firmware &amp; Hardware Verification">
+<meta name="twitter:description" content="PCB design, embedded C/C++ firmware, microcontroller behavior, verification, analysis, and manufacturing in one professional workspace.">
+<meta name="twitter:image" content="images/og-image.png">
+
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.nav-links{position:static;opacity:1;visibility:visible;transform:none;border-top:0;padding:0;flex-direction:row;background:none;min-height:0;}.nav-toggle{display:none;}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Unmild Designer",
+  "applicationCategory": "DeveloperApplication",
+  "applicationSubCategory": "PCB design and circuit simulation software (EDA)",
+  "description": "A professional desktop electronics platform for PCB layout, embedded firmware authoring, microcontroller behavior, 3D verification, analysis, and manufacturing output.",
+  "author": { "@type": "Organization", "name": "Unmild Designer" },
+  "programmingLanguage": "Rust",
+  "image": "images/og-image.png",
+  "installUrl": "https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&gl=IN&ocid=pdpshare"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Unmild Designer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A professional desktop electronics platform that unifies PCB design, embedded firmware development, microcontroller behavior, 3D verification, analysis, and manufacturing output." }
+    },
+    {
+      "@type": "Question",
+      "name": "What file format does it use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Projects are saved as .tamas files inside a project folder. Exporting adds a build folder alongside it holding the fabrication output." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Run actually simulate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Run is Unmild Designer's board-behavior environment. It shows component state, readings, and issues in the context of the board." }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I get when I export?",
+      "acceptedAnswer": { "@type": "Answer", "text": "One export produces a complete release package with manufacturing artwork, drill data, documentation, review material, and release information." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Unmild Designer free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, it's commercial software. Get in touch for current pricing and access." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who builds Unmild Designer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Unmild Designer is a professional Windows desktop electronics design platform." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+      <span class="brand-word">Unmild Designer</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="features.html">Platform</a>
+      <a href="features.html#special-features">Special Features</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">professional electronics design platform</span>
+        <h1 style="margin-top:0.6em;">Design the board. Write the firmware. <em>See it work.</em></h1>
+        <p class="hero-sub">Unmild Designer brings PCB layout, embedded C/C++ development, microcontroller behavior, 3D verification, analysis, and manufacturing release into one serious Windows desktop workflow.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+          <a class="btn btn-secondary" href="features.html#special-features">Explore Special Features</a>
+        </div>
+        <div class="hero-specs">
+          <span class="pill">PCB + <b>firmware</b></span>
+          <span class="pill">Embedded <b>C/C++</b></span>
+          <span class="pill">Windows <b>desktop</b></span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="shot">
+          <img src="images/screens/hero_run_3d.webp" width="686" height="688" alt="Unmild Designer's Run view showing a 3D board mid-simulation, a motor spinning at 7,398 RPM, and a flagged fault reading '1 fault — this would not work on the bench'." loading="eager">
+        </div>
+        <p class="hero-note"><span class="dot" aria-hidden="true"></span> live from Run — a motor at 7,398 rpm, one fault flagged</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight mool-intro" id="special-features" aria-labelledby="special-title">
+    <div class="container">
+      <div class="feature-row" style="padding-top:0;">
+        <div class="f-text">
+          <span class="eyebrow">special features</span>
+          <h2 id="special-title" style="margin-top:0.45em;">Mool and Live 3D: the board, code, and behavior in one view.</h2>
+          <p><strong>Mool</strong> is Unmild Designer’s embedded-development environment. Write C or C++ against the microcontroller placed on your board, build it through your installed toolchain, create the required binary image, and watch the design respond in real time. <strong>Live 3D</strong> keeps the physical board visible while behavior, readings, and issues evolve.</p>
+          <ul>
+            <li>Author embedded C/C++ in the same project as the PCB</li>
+            <li>Build firmware with your local compiler and generate board-ready binary output</li>
+            <li>Program the selected microcontroller and observe pins, behavior, readings, and faults alongside the 3D board</li>
+          </ul>
+          <a class="btn-ghost" href="features.html#special-features" style="display:inline-block; margin-top:var(--sp-5);">Explore Special Features</a>
+        </div>
+        <div class="f-media"><div class="shot"><img src="images/screens/mool.png" width="1280" height="1024" alt="Unmild Designer with the Mool embedded firmware editor open for an ESP32, a C++ blink program visible, and the Run 3D behavior window alongside the PCB." loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" aria-labelledby="confidence-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">purpose-built desktop EDA</span>
+        <h2 id="confidence-title">A serious workflow, from first trace to fabrication handoff.</h2>
+        <p>Professional electronics work moves from intent to layout, firmware, behavior, verification, and release. Unmild Designer is organized around that complete decision path.</p>
+      </div>
+      <div class="confidence-grid">
+        <article class="confidence-card"><span class="confidence-number">01</span><h3>Design with control</h3><p>Place parts, route copper, shape the board, use layers and grid snap, and tailor navigation, colors, keys, and panels to your working style.</p></article>
+        <article class="confidence-card"><span class="confidence-number">02</span><h3>Program in context</h3><p>Use Mool to write embedded C/C++, build the selected target, program the microcontroller, and observe its behavior in the same design environment.</p></article>
+        <article class="confidence-card"><span class="confidence-number">03</span><h3>Release with confidence</h3><p>Move from verified design to complete manufacturing output, documentation, review material, and release information without breaking the workflow.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <h2>Design, verify, run, export</h2>
+        <p>One connected workflow for board design, embedded code, behavior, verification, and manufacturing.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Design</h3>
+          <p>Place parts from the built-in library, route traces with the wire tool, and shape the board outline.</p>
+        </div>
+        <div class="step">
+          <h3>Verify</h3>
+          <p>Review the board in 3D and run the current basic PCB DRC and schematic ERC checks before release.</p>
+        </div>
+        <div class="step">
+          <h3>Program</h3>
+          <p>Write embedded C/C++ with Mool, build target-ready binaries through your local toolchain, and program the microcontroller in context.</p>
+        </div>
+        <div class="step">
+          <h3>Release</h3>
+          <p>Generate the complete package for manufacturing, review, and handoff in one professional release workflow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="callout">
+        <div>
+          <h2>Review behavior where the board is being designed.</h2>
+          <p style="color:var(--muted); margin-top:var(--sp-4);">Run gives supported components a visible state on the board and reports concrete readings and problems. In this example, it identifies an LED current issue and suggests a series-resistor change — useful feedback while the layout is still open.</p>
+          <a class="btn-ghost" href="features.html#run-verification" style="display:inline-block; margin-top:var(--sp-5);">See 3D verification &amp; Run</a>
+        </div>
+        <div class="shot">
+          <img src="images/screens/fault_detail.webp" width="686" height="302" alt="Unmild Designer's Problems panel reading: Fault D1. D1 is passing 841 mA, well past the 20 mA an ordinary LED survives. Put about 15.0 ohms in series with it." loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="feature-row">
+        <div class="f-media">
+          <div class="shot">
+            <img src="images/screens/summon_parts.webp" width="1366" height="692" alt="The Summon parts picker in Unmild Designer, searching a battery holder library with CR2032, AA, 9V clip, and 18650 packages." loading="lazy">
+          </div>
+        </div>
+        <div class="f-text">
+          <h3>A parts library that comes when called</h3>
+          <p>The component picker — internally named <strong>Saad</strong>, Sanskrit for "to call" — searches by part, value, or package and drops it wherever you click. No hunting through nested menus mid-layout.</p>
+          <ul>
+            <li>Search across resistors, capacitors, inductors, diodes, LEDs, batteries, and more</li>
+            <li>Filter by value and package before you place a single part</li>
+            <li>Keep summoning the same part, or switch and stay in flow</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="f-media">
+          <div class="shot">
+            <img src="images/screens/many_boards.webp" width="1366" height="692" alt="A grid of PCB boards laid out in Unmild Designer, showing Board 1 through Board 35 of a project supporting up to 1,000 boards." loading="lazy">
+          </div>
+        </div>
+        <div class="f-text">
+          <h3>A workspace that adapts to you</h3>
+          <p>Unmild Designer is designed to stay out of the way. Make panels float or dock, tune zoom and pan behavior, point zoom to the cursor, save navigation presets, and remap command keys.</p>
+          <ul>
+            <li>Customize zoom animation, zoom, horizontal and vertical pan, and hand-tool sensitivity</li>
+            <li>Save navigation presets, retain custom colors, and restore the workspace you prefer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="f-media">
+          <div class="shot">
+            <img src="images/screens/export_output.webp" width="1366" height="690" alt="A file explorer showing Unmild Designer's export output: Gerber files, drill files, BOM, pick-and-place, stackup, fabrication manifest, and README." loading="lazy">
+          </div>
+        </div>
+        <div class="f-text">
+          <h3>Release manufacturing data with confidence</h3>
+          <p>Generate manufacturing artwork, drill data, bill of materials, placement information, stackup, review drawings, release notes, and a fabrication manifest together—built for a clean handoff from design to production.</p>
+          <a class="btn-ghost" href="features.html#exporting" style="display:inline-block; margin-top:var(--sp-2);">See the full export list</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="dev-card" style="margin-top:0;">
+        <div class="dev-avatar" aria-hidden="true">G</div>
+        <div>
+          <h3>One platform for the board and the code that brings it to life</h3>
+          <p>Unmild Designer connects physical design with embedded firmware. Lay out the board, write C/C++ in Mool, program the microcontroller, watch the behavior, then release the complete design package. <a class="link-inline" href="about.html">Discover the platform →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <h2>Questions people ask first</h2>
+      </div>
+      <div>
+        <details class="faq-item" open>
+          <summary>What is Unmild Designer? <span class="chev" aria-hidden="true"></span></summary>
+          <p>A professional Windows electronics platform for PCB layout, embedded firmware, microcontroller behavior, 3D verification, analysis, and manufacturing release.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What file format does it use? <span class="chev" aria-hidden="true"></span></summary>
+          <p>Projects are saved as <code>.tamas</code> files inside a project folder. Exporting adds a <code>build</code> folder alongside it holding the fabrication output.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What does Run actually simulate? <span class="chev" aria-hidden="true"></span></summary>
+          <p>Run is the live board-behavior environment. It shows component state, readings, and issues in the context of the PCB, while Mool lets embedded C/C++ code program the microcontroller that drives the design.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What do I get when I export? <span class="chev" aria-hidden="true"></span></summary>
+          <p>One export creates a complete release package: manufacturing artwork, drill data, bill of materials, placement information, stackup, review documentation, and fabrication information.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is Unmild Designer free? <span class="chev" aria-hidden="true"></span></summary>
+          <p>It is available through the Microsoft Store. <a class="link-inline" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">View Unmild Designer on Microsoft Store</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who builds Unmild Designer? <span class="chev" aria-hidden="true"></span></summary>
+          <p>Unmild Designer is a professional electronics design platform for PCB, firmware, verification, and manufacturing. <a class="link-inline" href="about.html">More about the platform.</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="get">
+    <div class="container">
+      <div class="get-band">
+        <span class="eyebrow">get unmild designer</span>
+        <h2 style="margin-top:0.6em;">Route it, watch it run, then send it to fab.</h2>
+        <p>Download Unmild Designer from the Microsoft Store and start designing, verifying, and exporting in one desktop workflow.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+          <a class="btn btn-secondary" href="features.html">Tour the UI</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+          <span class="brand-word">Unmild Designer</span>
+        </a>
+        <p>A PCB editor with a 3D view and a real circuit simulator, written in Rust. Project files use the <code>.tamas</code> extension.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Platform</a></li>
+            <li><a href="features.html#special-features">Special Features</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get it</h4>
+          <ul>
+            <li><a href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Microsoft Store</a></li>
+            <li><a href="features.html#special-features">Explore Special Features</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Unmild Designer.</span>
+      <span>Professional electronics design software</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

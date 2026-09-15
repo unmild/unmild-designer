@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform Features — Unmild Designer</title>
+<meta name="description" content="Explore Unmild Designer: professional PCB design, Mool embedded C/C++ development, microcontroller programming and behavior, 3D review, verification, analysis, customization, and manufacturing release.">
+<meta name="theme-color" content="#0b0a17">
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Unmild Designer">
+<meta property="og:title" content="Platform Features — Unmild Designer">
+<meta property="og:description" content="Professional PCB design, Mool embedded firmware, microcontroller programming, 3D review, verification, analysis, and manufacturing release.">
+<meta property="og:image" content="images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Features &amp; UI Tour — Unmild Designer">
+<meta name="twitter:image" content="images/og-image.png">
+
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.nav-links{position:static;opacity:1;visibility:visible;transform:none;border-top:0;padding:0;flex-direction:row;background:none;min-height:0;}.nav-toggle{display:none;}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home" },
+    { "@type": "ListItem", "position": 2, "name": "Features" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+      <span class="brand-word">Unmild Designer</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="features.html" aria-current="page">Platform</a>
+      <a href="#special-features">Special Features</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section-tight" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">the full tour</span>
+      <h1 style="margin-top:0.6em; max-width:18ch;">One professional platform for the board and the firmware.</h1>
+      <p class="lede" style="margin-top:var(--sp-4);">Unmild Designer brings the complete electronics workflow together: PCB design, embedded C/C++, microcontroller programming, live behavior, 3D review, analysis, verification, and manufacturing release.</p>
+
+      <nav aria-label="On this page" style="margin-top:var(--sp-7); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:var(--sp-4);">
+        <ul class="tour-list">
+          <li><a class="link-inline" href="#getting-started">Starting a board</a></li>
+          <li><a class="link-inline" href="#canvas">The canvas &amp; navigation</a></li>
+          <li><a class="link-inline" href="#special-features">Special Features — Mool &amp; Live 3D</a></li>
+          <li><a class="link-inline" href="#workbenches">Design through release workbenches</a></li>
+          <li><a class="link-inline" href="#menus">Menu bar, File to Customize</a></li>
+          <li><a class="link-inline" href="#toolbox">The toolbox</a></li>
+          <li><a class="link-inline" href="#run-verification">3D verification &amp; Run</a></li>
+          <li><a class="link-inline" href="#exporting">Exporting for fabrication</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="tour">
+
+      <article class="tour-item" id="getting-started">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">01 — welcome screen</span>
+        <h2>Starting a board</h2>
+        <p class="lede">Three ways in: start something new, reopen a project folder, or open a board file directly.</p>
+
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/start_screen.webp" width="1366" height="692" alt="Unmild Designer's welcome screen with New project, Open project folder, and Open board file, plus saved board presets and recent projects." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Welcome screen</strong><span>presets · recent projects</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/create_project.webp" width="1366" height="692" alt="The Create a project dialog: pick a parent folder, name the project, set board size in millimetres with quick presets like Eurocard and Pi HAT, and choose how many boards to start with." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Create a project</strong><span>folder · size · board count</span></figcaption>
+          </figure>
+        </div>
+
+        <p style="margin-top:var(--sp-6);"><strong>New project</strong> walks through a parent folder, a project name, a board size in millimetres (with quick presets — Tiny signal, Eurocard, Wide panel, Card size, Pi HAT, Uno shield — or saved custom sizes), and how many boards to start with. <strong>Create project</strong> sets up a folder containing a single <code class="mono">.tamas</code> file — that file is the board. Exporting later adds a <code class="mono">build</code> folder alongside it with the fabrication output, so a project stays one folder that can be copied, zipped, or handed off whole.</p>
+        <p><strong>Open project folder</strong> loads any project by pointing at its folder — even nested a level or two down. <strong>Open board file</strong> skips straight to a specific <code class="mono">.tamas</code> file. Saved presets and recent projects sit ready to reopen with one click.</p>
+      </article>
+
+      <article class="tour-item" id="canvas">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">02 — the workspace</span>
+        <h2>The canvas &amp; navigation</h2>
+        <p class="lede">Menu bar and toolbox up top, properties on the right, the board itself in the middle — and navigation that stays under one hand.</p>
+
+        <div class="tour-shots single">
+          <figure>
+            <div class="shot"><img src="images/screens/ui_workspace.webp" width="1366" height="692" alt="Unmild Designer's main workspace: a green PCB board on a dark canvas, with the toolbox on the left and a properties panel on the right showing board size, grid, and a live Basic DRC status of No reported issue." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Main workspace</strong><span>X 121.000 &nbsp; Y 34.500 mm</span></figcaption>
+          </figure>
+        </div>
+
+        <p style="margin-top:var(--sp-6);">Navigation is built for a mouse and can be made your own. Tune zoom animation, zoom sensitivity, horizontal and vertical pan sensitivity, hand-tool sensitivity, and whether zoom follows the pointer. Save navigation presets for different working styles. Grid visibility and snapping are controlled separately, while live coordinates keep every edit legible. Design checks remain visible in the properties panel so the PCB stays under control while it is being built.</p>
+      </article>
+
+      <article class="tour-item" id="special-features">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">03 — special features</span>
+        <h2>Live 3D and Mool: firmware and physical hardware in the same workflow.</h2>
+        <p class="lede">Two standout capabilities bring the electronics design to life: Live 3D makes the board visible as a physical system; Mool brings the code that controls it into the project.</p>
+
+        <div class="special-feature-grid">
+          <section class="special-feature-card" aria-labelledby="live-3d-title">
+            <span class="confidence-number">LIVE 3D</span>
+            <h3 id="live-3d-title">See the physical system, not only the canvas.</h3>
+            <p>Live 3D gives the board a working physical perspective. Inspect the PCB, components, outline, and the visible state of the design while the Run environment reports readings, pin activity, and issues. It turns a flat layout into a system you can review from the way it will exist in the real world.</p>
+            <a class="link-inline" href="#run-verification">Explore Live 3D &amp; Run →</a>
+          </section>
+          <section class="special-feature-card" aria-labelledby="mool-title">
+            <span class="confidence-number">MOOL · ORIGIN</span>
+            <h3 id="mool-title">Bring embedded C/C++ into the board project.</h3>
+            <p>Mool connects the code, target microcontroller, and PCB. Select the controller on the board, author firmware in the embedded editor, build the target image through the installed local toolchain, program it, and return directly to Live 3D and Run.</p>
+            <a class="link-inline" href="#mool-workflow">See the Mool workflow →</a>
+          </section>
+        </div>
+
+        <div id="mool-workflow">
+        <h3 style="margin-top:var(--sp-7);">Mool: write the firmware. Program the microcontroller. Watch the hardware respond.</h3>
+        <p class="lede">Mool closes the distance between the PCB and the code that gives it behavior.</p>
+
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/mool.png" width="1280" height="1024" alt="Mool open in Unmild Designer with an ESP32 selected, an embedded C++ blink program in the editor, and the Run 3D behavior window beside the PCB." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Mool editor</strong><span>code · target · behavior</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/mool_1.png" width="1280" height="1024" alt="Unmild Designer showing an ESP32 board, the microcontroller library, and the Run window ready to inspect behavior." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Microcontroller in context</strong><span>PCB · firmware · Run</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="mool-flow" aria-label="Mool firmware workflow">
+          <div><span>01</span><strong>Choose the target</strong><p>Place and select the microcontroller on the PCB. Mool works in the context of the selected hardware.</p></div>
+          <div><span>02</span><strong>Write C or C++</strong><p>Author embedded firmware directly inside Unmild Designer, beside the board and its pins.</p></div>
+          <div><span>03</span><strong>Build the image</strong><p>Mool invokes the compiler installed on your computer and prepares the binary format required by the target.</p></div>
+          <div><span>04</span><strong>Program &amp; observe</strong><p>Program the microcontroller, then use Run to see pin state, board behavior, readings, and issues in real time.</p></div>
+        </div>
+
+        <h3 style="margin-top:var(--sp-7);">A complete embedded workflow, inside the electronics project</h3>
+        <p>Mool gives the firmware a home where it belongs: in the same environment as the microcontroller, its pins, and the PCB around it. Write C/C++, build it with the toolchain already installed on your system, produce the board-ready binary image, and program the selected target without breaking concentration or switching products.</p>
+        <p>The result is a tighter engineering loop. The board defines the physical system; the firmware defines how the microcontroller drives it; Run makes the behavior visible. Whether you are bringing up a blinking LED, validating GPIO logic, or testing a controller-driven board, Mool keeps the code and the hardware in the same conversation.</p>
+        <p class="feature-note"><strong>What Mool needs:</strong> a supported microcontroller selected in the project and the matching compiler/toolchain installed on the Windows machine. Mool uses that local toolchain to compile C/C++ and generate the target’s required firmware binary format.</p>
+        </div>
+      </article>
+
+      <article class="tour-item" id="workbenches">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">04 — connected workbenches</span>
+        <h2>From design intent to release, in one desktop workspace</h2>
+        <p class="lede">Unmild Designer separates the work so design, firmware, verification, analysis, and release each have a clear home.</p>
+        <div class="confidence-grid">
+          <article class="confidence-card"><span class="confidence-number">DESIGN</span><h3>PCB canvas</h3><p>Place, select, move, duplicate, rotate, route, use layers, and build the board outline with direct manipulation and undo/redo.</p></article>
+          <article class="confidence-card"><span class="confidence-number">SCHEMATIC</span><h3>Design intent</h3><p>Create session components and named nets, then run basic ERC for missing components, missing nets, and duplicate net names.</p></article>
+          <article class="confidence-card"><span class="confidence-number">MOOL</span><h3>Embedded firmware</h3><p>Author C/C++, build with the local compiler, generate a target image, and program the selected microcontroller in context.</p></article>
+          <article class="confidence-card"><span class="confidence-number">ANALYSIS</span><h3>First-pass impedance</h3><p>Estimate single-ended microstrip and edge-coupled differential impedance from editable stack-up assumptions.</p></article>
+          <article class="confidence-card"><span class="confidence-number">VERIFY</span><h3>Verification</h3><p>Bring PCB checks, schematic checks, 3D review, Run behavior, and firmware-driven board observation into one engineering workflow.</p></article>
+          <article class="confidence-card"><span class="confidence-number">RELEASE</span><h3>Manufacturing release</h3><p>Generate the complete manufacturing, documentation, review, and release package in one controlled export.</p></article>
+        </div>
+      </article>
+
+      <article class="tour-item" id="menus">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">05 — menu bar</span>
+        <h2>Menus, from File to Customize</h2>
+        <p class="lede">Seven menus: File, Edit, Object, View, Run, Window, and Customize.</p>
+
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/file_menu.webp" width="1366" height="692" alt="The File menu open, showing New project, Open, Save, Save as, Place image or PDF, Link image or PDF reference, Close project, Run DRC, 3D verification, and Export PCB package." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>File</strong><span>DRC · 3D verification · export</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/parts_of_board.webp" width="1366" height="692" alt="The Object menu's parts-of-board view, listing what's currently placed on the board." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Object → Parts of board</strong><span>everything placed, at a glance</span></figcaption>
+          </figure>
+        </div>
+
+        <h3 style="margin-top:var(--sp-7);">File</h3>
+        <p>New project, Open, Save, and Save as cover the essentials. <strong>Place image / PDF</strong> (<span class="kbd">Ctrl+Shift+P</span>) places a visual reference on the board; <strong>Link image / PDF reference</strong> attaches datasheets, drawings, logos, or mechanical reference material. The workflow continues through DRC, 3D verification, Mool firmware, Run, and manufacturing release.</p>
+
+        <h3>Edit</h3>
+        <p>Undo, redo, and delete, behaving the way any editor should.</p>
+
+        <h3>Object</h3>
+        <p>This is where <strong>Summon</strong> lives — the searchable parts picker (its own section below) — alongside <strong>parts of board</strong>, a running list of exactly what's already placed.</p>
+
+        <h3>View</h3>
+        <p>Make the canvas match your habits: tune zoom, horizontal and vertical pan, and hand-tool sensitivity; choose pointer-centered zoom; then save and restore navigation presets.</p>
+
+        <h3>Mool &amp; Run</h3>
+        <p><strong>Mool</strong> is the embedded C/C++ environment for compiling, generating target images, and programming a microcontroller in context. <strong>Run</strong> is the live behavior view for the board. See <a class="link-inline" href="#special-features">Special Features</a> and <a class="link-inline" href="#run-verification">Live 3D &amp; Run</a>.</p>
+
+        <h3>Window</h3>
+        <p>Show or hide any panel — tools, properties, object stack — to clear the canvas down to just the board.</p>
+
+        <h3>Customize</h3>
+        <p>Make the workspace yours: custom colors for the application, panel, canvas, grid, board, text, accent, and copper; searchable, remappable command keys; navigation sensitivity; and panel docking or floating windows.</p>
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/keyboard_shortcuts.webp" width="1366" height="692" alt="Unmild Designer's keyboard shortcut customization screen." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Keyboard shortcuts</strong><span>fully remappable</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/custom_colors.webp" width="1366" height="692" alt="Unmild Designer's custom color theme editor." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Custom colors</strong><span>a themeable workspace</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="tour-item" id="toolbox">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">06 — toolbox</span>
+        <h2>The toolbox</h2>
+        <p class="lede">Pick, Hand, Setu, Board, Shape, Saad, and Text — every tool sits one keypress from the canvas.</p>
+
+        <p><strong>Pick</strong> selects and <strong>Hand</strong> pans. Everything else is where the board gets built:</p>
+
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/setu_wire_tool.webp" width="1366" height="692" alt="The Setu wire tool drawing a curved copper trace on the board, with options for straight legs only, finish on a pad, follow shapes, and a 1.20 mm magnet snap distance." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Setu</strong><span>"bridge / connector"</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/board_tool.webp" width="1366" height="692" alt="The board tool's submenu with icons for pad, via, trace, mounting hole, and board edge, drawing a custom board outline." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Board</strong><span>PAD · VIA · TRACE · more</span></figcaption>
+          </figure>
+        </div>
+
+        <h3 style="margin-top:var(--sp-7);">Setu — the wire tool</h3>
+        <p>Named after the Sanskrit word for a bridge or connector. Hold <span class="kbd">Ctrl</span> for straight, linear legs; hold and drag to bend a curve, pen-tool style. Live options while drawing: straight legs only (45°), finish on a pad, follow shapes, and a magnet snap distance set in millimetres.</p>
+
+        <h3>Board</h3>
+        <p>Build with the essentials: <strong>pads, vias, traces, holes, mounting holes, mask openings, copper zones, board edges,</strong> and <strong>nets</strong>. The layer system covers copper, silkscreen, mask, paste, and profile artwork.</p>
+
+        <h3>Shape</h3>
+        <p>Rectangle, ellipse, and polygon. Hold <span class="kbd">Ctrl</span> while drawing to constrain a shape to equal width and height.</p>
+        <div class="tour-shots single">
+          <figure>
+            <div class="shot"><img src="images/screens/shape_tool.webp" width="1366" height="692" alt="The shape tool drawing rectangles, ellipses, and polygons on the board." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Shape</strong><span>hold Ctrl for a perfect shape</span></figcaption>
+          </figure>
+        </div>
+
+        <h3>Saad &amp; Text</h3>
+        <p>Saad — Sanskrit for "to call" or "to summon" — is the same parts picker as Object → Summon, kept one click away in the toolbox for placing resistors, LEDs, batteries, and the rest without leaving the canvas. The text tool adds labels and silkscreen notes directly on the board.</p>
+      </article>
+
+      <article class="tour-item" id="run-verification">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">07 — verification</span>
+        <h2>3D verification &amp; Run</h2>
+        <p class="lede">A visual board review and live behavior environment that keep feedback beside the layout and firmware.</p>
+
+        <div class="tour-shots">
+          <figure>
+            <div class="shot"><img src="images/screens/hero_run_3d.webp" width="686" height="688" alt="Unmild Designer's 3D Run view: a rendered board with a motor spinning at 7,398 RPM and a banner reading 1 fault — this would not work on the bench." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Run · 3D view</strong><span>motor at 7,398 rpm</span></figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><img src="images/screens/fault_detail.webp" width="686" height="302" alt="Run's Problems tab: Fault D1 — D1 is passing 841 mA, well past the 20 mA an ordinary LED survives. Put about 15.0 ohms in series with it. D1 at 24.82, 69.00 mm." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>Run · Problems</strong><span>names the part, states the fix</span></figcaption>
+          </figure>
+        </div>
+
+        <p style="margin-top:var(--sp-6);"><strong>3D verification</strong> (<span class="kbd">F5</span>) gives the board a physical rendering that can be inspected from any angle. It is a useful review view for the current board geometry and supported component bodies.</p>
+        <p><strong>Run</strong> turns the board into a live engineering view: component state, pin activity, readings, and issues stay visible in the context of the physical PCB. With Mool, the microcontroller firmware becomes part of that same loop—write the code, program the target, and see how the board responds. The Simulation and Analysis workbenches extend the workflow with DC, AC, transient RC, and impedance calculation.</p>
+      </article>
+
+      <article class="tour-item" id="exporting">
+        <div class="tour-marker" aria-hidden="true"></div>
+        <span class="tour-kicker">08 — fabrication</span>
+        <h2>Exporting for fabrication</h2>
+        <p class="lede">File → Export PCB package turns the completed electronics design into a professional manufacturing and review package in one pass.</p>
+
+        <div class="tour-shots single">
+          <figure>
+            <div class="shot"><img src="images/screens/export_output.webp" width="1366" height="690" alt="A build folder containing Gerber files, drill files, BOM, pick-and-place, stackup, fabrication manifest, README, and review file." loading="lazy"></div>
+            <figcaption class="shot-caption"><strong>build/</strong><span>26 files, one export</span></figcaption>
+          </figure>
+        </div>
+
+        <p style="margin-top:var(--sp-6);">Everything lands in the project's <code class="mono">build</code> folder:</p>
+        <ul class="tour-list">
+          <li>Gerber artwork for copper, silkscreen, mask, paste, and profile layers</li>
+          <li>Drill and NC manufacturing data</li>
+          <li>Board review drawing and project review PDF</li>
+          <li>Release manifest and README</li>
+          <li>Bill of materials, pick-and-place, and stackup information</li>
+          <li>Fabrication information for a complete handoff</li>
+        </ul>
+        <p style="margin-top:var(--sp-5);">One export keeps the release package together: the manufacturing files, review material, documentation, and fabrication information leave the project as one organized deliverable.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="get-band">
+        <h2>Seen enough? Get Unmild Designer.</h2>
+        <div class="btn-row">
+          <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+          <a class="btn btn-secondary" href="about.html">About the project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+          <span class="brand-word">Unmild Designer</span>
+        </a>
+        <p>Professional PCB, embedded firmware, microcontroller behavior, verification, and manufacturing software. Project files use the <code>.tamas</code> extension.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Platform</a></li>
+            <li><a href="#special-features">Special Features</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get it</h4>
+          <ul>
+            <li><a href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Microsoft Store</a></li>
+            <li><a href="#special-features">Explore Special Features</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Unmild Designer.</span>
+      <span>Professional electronics design software</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
