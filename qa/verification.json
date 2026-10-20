@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-10-20T17:37:15.045Z",
+  "results": [
+    {
+      "file": "index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "title": "Unmild Designer — A place for the whole board.",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "privacy.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "title": "Privacy Policy — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "terms.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "title": "Terms of Use — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Unmild Designer — A place for the whole board.",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "privacy.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Privacy Policy — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "terms.html",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Terms of Use — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Unmild Designer — A place for the whole board.",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "privacy.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Privacy Policy — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "terms.html",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Terms of Use — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Unmild Designer — A place for the whole board.",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "privacy.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Privacy Policy — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "terms.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Terms of Use — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Unmild Designer — A place for the whole board.",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "privacy.html",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Privacy Policy — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "file": "terms.html",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Terms of Use — Unmild Designer",
+      "h1": 1,
+      "broken": [],
+      "duplicateIds": []
+    },
+    {
+      "revision": "Header policies open in new tabs; all six detailed capability sections are visible without tab interaction."
+    },
+    {
+      "interactions": "tabs, arrow/Home/End keys, FAQ keyboard, mobile menu, Escape focus return, section focus, skip link passed"
+    },
+    {
+      "noJavaScript": "Navigation, all product sections and native FAQ remain available"
+    },
+    {
+      "imageFailure": "Accessible fallback message and direct image link displayed"
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

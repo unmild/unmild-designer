@@ -1,0 +1,37 @@
+[
+  {
+    "foreground": "ink",
+    "background": "paper",
+    "contrast": 10.7
+  },
+  {
+    "foreground": "muted",
+    "background": "paper",
+    "contrast": 5.19
+  },
+  {
+    "foreground": "muted",
+    "background": "wash",
+    "contrast": 4.81
+  },
+  {
+    "foreground": "paper",
+    "background": "ink",
+    "contrast": 10.7
+  },
+  {
+    "foreground": "accent",
+    "background": "ink",
+    "contrast": 9.4
+  },
+  {
+    "foreground": "ink",
+    "background": "accent",
+    "contrast": 9.4
+  },
+  {
+    "foreground": "light-text",
+    "background": "ink",
+    "contrast": 7.63
+  }
+]
